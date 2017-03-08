@@ -1,0 +1,31 @@
+{
+  "name": "sample-vue-webpack",
+  "version": "1.0.0",
+  "description": "Sample Vue front-end bundled with webpack",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevkan/sample-vue-webpack"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "kevkan",
+  "license": "ISC",
+  "dependencies": {
+    "tachyons": "^4.6.2",
+    "vue": "^2.2.1",
+    "vue-router": "^2.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^3.2.3",
+    "css-loader": "^0.26.2",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
