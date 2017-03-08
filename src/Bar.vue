@@ -16,10 +16,9 @@ module.exports = {
 	created: function() {
 		var self = this;
 		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "http://localhost:5000/api");
+		xhr.open("GET", API_URL);
 		xhr.onload = function() {
-			self.message = JSON.parse(xhr.responseText);
-			self.message = self.message.data;
+			self.message = JSON.parse(xhr.responseText).data;
 		}
 		xhr.send();
 	}
