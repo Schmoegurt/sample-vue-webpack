@@ -10,17 +10,17 @@ import Foo from './Foo.vue';
 import Bar from './Bar.vue';
 
 var routes = [
-	{ path: "/", redirect: "/foo" },
-	{ path: '/foo', component: Foo },
-	{ path: '/bar', component: Bar }
+  { path: '/', redirect: '/foo' },
+  { path: '/foo', component: Foo },
+  { path: '/bar', component: Bar }
 ];
 
 var router = new VueRouter({
-	routes: routes
+  routes: routes
 });
 
 new Vue({
-	el: '#app',
-	router: router,
-	render: h => h(App)
+  el: '#app',
+  router: router,
+  render: h => h(App)
 });
